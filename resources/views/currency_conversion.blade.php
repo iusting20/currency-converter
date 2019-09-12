@@ -14,59 +14,64 @@
         <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     </head>
 
-    <body style="padding-top: 2em;">
+    <body style="padding-top: 2em; background-color: #170321;">
         <div class="container">
-            <h1 style="font-family: 'Lobster', cursive; text-align: center;"> Currency Converter </h1>
-
-            <br /> <br />
-
-            <form>
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group">
-                            <label for="convert-amount">Convert Amount</label>
-                            <input type="text" class="form-control" id="convert-amount" placeholder="enter amount...">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="convert-from"> Convert from: </label>
-                            <select multiple class="form-control" id="convert-from">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="convert-to"> Convert to: </label>
-                            <select multiple class="form-control" id="convert-to">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <br />
-
-                <div class="row">
-                    <div class="col" style="text-align: center;">
-                        <button type="button" class="btn btn-success">Submit</button>
-                    </div>
-                </div>
+            <div class="card">
                 
-            </form>
+                <div class="card-header">
+                    <h1 style="font-family: 'Lobster', cursive; text-align: center;"> Currency Converter </h1>
+                </div>
+
+                <div class="card-body">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="convert-amount">Convert Amount</label>
+                                    <input type="number" class="form-control" id="convert-amount" placeholder="enter amount...">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="convert-from"> Convert from: </label>
+                                    <select multiple class="form-control" id="convert-from">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="convert-to"> Convert to: </label>
+                                    <select multiple class="form-control" id="convert-to">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row">
+                            <div class="col" style="text-align: center;">
+                                <button type="button" class="btn btn-success">Submit</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
         </div>
 
 
