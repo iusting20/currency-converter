@@ -20,6 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::get('/currency', function (Request $request) {
+                                                            // 🌟 MOVE INTO SEPARATE MODEL !
     // INIT VARS
     $initialCurrency = $request->from;
     $targetCurrency = $request->to;
@@ -46,6 +47,6 @@ Route::get('/currency', function (Request $request) {
 
 
 
-    
+
     return $convertedAmount;
 });
