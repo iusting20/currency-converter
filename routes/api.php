@@ -44,5 +44,8 @@ Route::get('/currency', function (Request $request) {
         }
     }
 
+
+
+    
     return $convertedAmount;
 });
