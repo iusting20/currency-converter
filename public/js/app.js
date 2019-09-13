@@ -19484,7 +19484,7 @@ var staticRenderFns = [
                   _c("input", {
                     staticClass: "form-control",
                     attrs: {
-                      type: "float",
+                      type: "number",
                       id: "convert-amount",
                       placeholder: "enter amount..."
                     }
@@ -19577,6 +19577,33 @@ var staticRenderFns = [
                   )
                 ]
               )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-sm-3" }, [
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", { attrs: { for: "convert-to" } }, [
+                    _vm._v(" Using Conversion Rate Site: ")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "select",
+                    {
+                      staticClass: "form-control",
+                      attrs: { multiple: "", id: "conversion-site" }
+                    },
+                    [
+                      _c("option", { attrs: { value: "floatrates" } }, [
+                        _vm._v(" Floatrates.com ")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "fxexchangerate" } }, [
+                        _vm._v(" FXexchangerate.com ")
+                      ])
+                    ]
+                  )
+                ])
+              ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "row" }, [

@@ -12,7 +12,7 @@
                             <div class="col">
                                 <div class="form-group">
                                     <label for="convert-amount">Convert Amount</label>
-                                    <input type="float" class="form-control" id="convert-amount" placeholder="enter amount...">
+                                    <input type="number" class="form-control" id="convert-amount" placeholder="enter amount...">
                                 </div>
                             </div>
                         </div>
@@ -51,6 +51,18 @@
                             <div class="col" style="text-align: center;">
                                 <div class="alert alert-warning" role="alert" style="text-align: center; opacity: 0; transition: 1s; font-size: 2em; height: 0px;" id="display-box">
                                     —
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label for="convert-to"> Using Conversion Rate Site: </label>
+                                    <select multiple class="form-control" id="conversion-site">
+                                        <option value="floatrates"> Floatrates.com </option>
+                                        <option value="fxexchangerate"> FXexchangerate.com </option>
+                                    </select>
                                 </div>
                             </div>
                         </div>

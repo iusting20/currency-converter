@@ -15,8 +15,9 @@ class CurrencyController extends Controller
         $initialCurrency = $request->from;
         $targetCurrency = $request->to;
         $amount = $request->amount;
-
+        $currencySite = $request->site;
         
-        return $currency->convertCurrency($initialCurrency, $targetCurrency, $amount);
+        
+        return $currency->convertCurrency($currencySite, $initialCurrency, $targetCurrency, $amount);
     }
 }
