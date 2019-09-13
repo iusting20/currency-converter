@@ -18,3 +18,10 @@ function makeConversion()  {
         })
     }
 }
+
+$('#convert-amount').keypress(function (event) {
+    if (event.keyCode === 10 || event.keyCode === 13) {
+        event.preventDefault();
+        $('#submit-button').click()
+    }
+});

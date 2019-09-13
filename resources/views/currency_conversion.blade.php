@@ -28,7 +28,7 @@
                             <div class="col">
                                 <div class="form-group">
                                     <label for="convert-amount">Convert Amount</label>
-                                    <input type="number" class="form-control" id="convert-amount" placeholder="enter amount...">
+                                    <input type="float" class="form-control" id="convert-amount" placeholder="enter amount...">
                                 </div>
                             </div>
                         </div>
@@ -73,7 +73,7 @@
 
                         <div class="row">
                             <div class="col" style="text-align: center;">
-                                <button type="button" class="btn btn-success" onclick="makeConversion()">Submit</button>
+                                <button type="button" class="btn btn-success" id="submit-button" onclick="makeConversion()">Submit</button>
                             </div>
                         </div>
                         
