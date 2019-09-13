@@ -11,10 +11,13 @@ Step 2
 >> composer update
 
 Step 3
+>> npm install
+
+Step 4
 >> npm run production
 
 All set!
 
 
-Live Demo:
+# Live Demo:
 https://justinsrv.xyz/_DEV_SPACE/currency-converter/public/
