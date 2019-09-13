@@ -15,72 +15,13 @@
     </head>
 
     <body style="padding-top: 2em; background-color: #170321;">
-        <div class="container">
-            <div class="card">
-                
-                <div class="card-header">
-                    <h1 style="font-family: 'Lobster', cursive; text-align: center;"> Currency Converter </h1>
-                </div>
 
-                <div class="card-body">
-                    <form>
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="convert-amount">Convert Amount</label>
-                                    <input type="float" class="form-control" id="convert-amount" placeholder="enter amount...">
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="convert-from"> Convert from: </label>
-                                    <select multiple class="form-control" id="convert-from">
-                                        <option> GBP </option>
-                                        <option> USD </option>
-                                        <option> EUR </option>
-                                        <option> RON </option>
-                                        <option> BBD </option>
-                                    </select>
-                                </div>
-                            </div>
 
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="convert-to"> Convert to: </label>
-                                    <select multiple class="form-control" id="convert-to">
-                                        <option> GBP </option>
-                                        <option> USD </option>
-                                        <option> EUR </option>
-                                        <option> RON </option>
-                                        <option> BBD </option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
+        <!-- VUE APP MOUNTS HERE -->
+        <div id="app"></div>
 
-                        <br />
-
-                        <div class="row">
-                            <div class="col" style="text-align: center;">
-                                <div class="alert alert-warning" role="alert" style="text-align: center; opacity: 0; transition: 1s; font-size: 2em; height: 0px;" id="display-box">
-                                    —
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col" style="text-align: center;">
-                                <button type="button" class="btn btn-success" id="submit-button" onclick="makeConversion()">Submit</button>
-                            </div>
-                        </div>
-                        
-                    </form>
-                </div>
-            </div>
-        </div>
+        
 
 
         <!-- jQuery + Bootstrap JS -->
@@ -89,5 +30,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
         <script src="{{ asset('js/currency.js') }}"></script>
+
+        <!-- THIS IS HARDCODED (BECAUSE WE DON'T HAVE DOMAIN NAME FOR THIS APP  =>  src={{ mix('js/app.js') }} DOESN'T RETURN PROPER FILE -->
+        <script src="https://justinsrv.xyz/_DEV_SPACE/currency-converter/public/js/app.js"></script>
     </body>
 </html>
