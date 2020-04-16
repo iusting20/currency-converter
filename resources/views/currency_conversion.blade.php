@@ -32,6 +32,6 @@
         <script src="{{ asset('js/currency.js') }}"></script>
 
         <!-- THIS IS HARDCODED (BECAUSE WE DON'T HAVE DOMAIN NAME FOR THIS APP  =>  src={{ mix('js/app.js') }} DOESN'T RETURN PROPER FILE -->
-        <script src="{{ mix('js/app.js') }}"></script>
+        <script src="https://justinsrv.xyz/_DEV_SPACE/currency-converter/public/js/app.js"></script>
     </body>
 </html>
